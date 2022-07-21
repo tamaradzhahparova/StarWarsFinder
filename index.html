@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>SWAPI</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <div class="content">
+    <div class="search">
+      <form class="search_form" action="formdata" method="post" name="form">
+        <label>Поиск:
+          <select class="list1" name="list1" id="list1" onchange="searchHandler(this.value)">
+            <option value="1" selected>персонажа</option>
+            <option value="2">корабля</option>
+            <option value="3">планеты</option>
+          </select>
+          <input type="text" class="person_search" id="person_search_input">
+        </label>
+        <button id="search_request_btn" class="button">Найти</button></form>
+      <ul class="search_result">
+      </ul>
+    </div>
+
+    <div class="person_data">
+      <div>Имя: <span id="person_name"></span></div>
+      <div>Рост: <span id="person_height"></span></div>
+      <div>Вес: <span id="person_mass"></span></div>
+      <div>Год рождения: <span id="person_birth_year"></span></div>
+      <div>В скольки фильмах появлялся: <span id="person_films_count"></span></div>
+    </div>
+
+    <div class="ship_data hidden">
+      <div>Имя: <span id="ship_name"></span></div>
+      <div>Модель: <span id="model"></span></div>
+      <div>Длина: <span id="length"></span></div>
+      <div>Количество пассажиров: <span id="passengers"></span></div>
+      <div>Изготовитель: <span id="manufacturer"></span></div>
+    </div>
+
+    <div class="planet_data hidden">
+      <div>Имя: <span id="planet_name"></span></div>
+      <div>Орбитальный период <span id="orbital_period"></span></div>
+      <div>Диаметр: <span id="diameter"></span></div>
+      <div>Климат: <span id="climate"></span></div>
+      <div>Популяция: <span id="population"></span></div>
+    </div>
+  </div>
+</body>
+
+</html>

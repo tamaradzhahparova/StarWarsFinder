@@ -1,0 +1,78 @@
+@import 'https://fonts.googleapis.com/css?family=Ubuntu:400,500&subset=latin,cyrillic';
+
+html, body {
+  width: 100%; height: 100%;
+}
+body, input[text]{
+  font-family: 'Ubuntu', serif; font-size: 20px;
+  background: #000; color: #FFE81F;
+}
+.content {
+  display: flex; width: 100%; height: 100%;
+  margin: 20px;
+  justify-content: left; align-items: top;
+}
+
+.list1 {
+  width: 150px;
+  height: 37px;
+  margin-bottom: -7px;
+  outline: none;
+  background-color: #FFE81F;
+  font-size: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.search input.person_search {
+  size:40px;
+  width: 30%;
+}
+
+.search .search_result li{
+  list-style-type: none;
+  padding: 7px;
+  margin: 6px;
+  border: solid 2px;
+  cursor: pointer;
+}
+.search .search_result li:hover{
+  border-color: #fff;
+  color: #fff;
+}
+
+.person_data,
+.ship_data,
+.planet_data {
+  margin: 35px 50px;
+  width: 50%;
+}
+.person_data div,
+.ship_data div,
+.planet_data div {
+  padding: 5px 0px;
+}
+.button {
+    background-color: #000;
+    color: #FFE81F;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; 
+    cursor: pointer;
+    border: solid 2px;
+}
+
+input[type=text] {
+    padding: 7px 10px;
+    margin: 0px 5px;
+    box-sizing: border-box; 
+    background: #FFE81F;
+    color: black;
+    border: solid 0px #000;
+    outline-color: #131417;
+    font-size: 20px;
+}
