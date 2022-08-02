@@ -3,3 +3,5 @@
 
 # Демо 
 [StarWarsFinder](https://tamaradzhahparova.github.io/StarWarsFinder/)
+
+<img align="center" width="100%" src="./starWarsScreen.png">
